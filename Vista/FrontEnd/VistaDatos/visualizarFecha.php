@@ -1,6 +1,6 @@
 <?php 
 include '../../../php/conexion.php';
-$fechaIncio=$_GET['2023-11-04'];
+$fechaIncio=$_GET['fechaAsistencia'];
 
  ?> 
 
@@ -42,7 +42,7 @@ tr:nth-child(even) {
   FROM( SELECT I.idTarjeta,A.colaborador,C.Nombres FROM inventariotarjetas I 
   INNER JOIN asignaciontarjeta A ON I.idTarjeta = A.idTarjeta INNER JOIN colaboradores C 
   ON A.colaborador = C.IdColaborador) T1 INNER JOIN asistencias M ON T1.idTarjeta = M.idTarjeta WHERE 
-  fechaHoraAsistencia>='2023-11-10 00:00:00' AND fechaHoraAsistencia <= '2023-11-10 23:59:00' )T2 
+  fechaHoraAsistencia>='$fechaIncio 00:00:00' AND fechaHoraAsistencia <= '$fechaIncio 23:59:00' )T2 
   GROUP BY Nombres";
   $query = mysqli_query($conexion,$instruccion);
     while ($r=mysqli_fetch_assoc($query)) {
