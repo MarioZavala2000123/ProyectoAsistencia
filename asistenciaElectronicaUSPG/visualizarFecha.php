@@ -1,6 +1,6 @@
 <?php 
-include '../../../php/conexion.php';
-//$fechaIncio=$_GET['2023-11-14'];
+include 'php/conexion.php';
+$fechaIncio=$_GET['fechaIncio'];
 
  ?> 
 
@@ -28,8 +28,6 @@ tr:nth-child(even) {
 </head>
 <body>
 
-<h2>Fecha</h2>
-
 <table>
   <tr>
     <th>Colaborador</th>
@@ -42,12 +40,11 @@ tr:nth-child(even) {
   FROM( SELECT I.idTarjeta,A.colaborador,C.Nombres FROM inventariotarjetas I 
   INNER JOIN asignaciontarjeta A ON I.idTarjeta = A.idTarjeta INNER JOIN colaboradores C 
   ON A.colaborador = C.IdColaborador) T1 INNER JOIN asistencias M ON T1.idTarjeta = M.idTarjeta WHERE 
-  fechaHoraAsistencia>='2023-11-14 00:00:00' AND fechaHoraAsistencia <= '2023-11-14 23:59:00' )T2 
+  fechaHoraAsistencia>='$fechaIncio 00:00:00' AND fechaHoraAsistencia <= '$fechaIncio 23:59:00' )T2 
   GROUP BY Nombres";
-  $query = mysqli_query($conexion,$instruccion);
+    $query = mysqli_query($conexion,$instruccion);
     while ($r=mysqli_fetch_assoc($query)) {
-      echo "<tr><td>".$r['Nombres']."</td><td>".$r['hora_Entrada']."</td><td>".
-      $r['hora_Salida']."</td></tr>";
+      echo "<tr><td>".$r['Nombres']."</td><td>".$r['hora_Entrada']."</td><td>".$r['hora_Salida']."</td></tr>";
    
     }
 

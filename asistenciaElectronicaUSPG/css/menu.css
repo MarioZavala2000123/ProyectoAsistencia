@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+		width: 100%;
+	height: 100%;
+}
+.menuPrincipal{
+	width: 14rem !important;
+	height: 100%;
+	background-color: #88D206;
+	/*box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);*/
+	float: left;
+	/*margin-right: 1%;*/
+}
+.contenido{
+	width: 80%;
+	height: 100%;
+	float: left;
+	background-color: #f8f9fc;
+}
+
+.opcionesEnc{
+	width: 100%;
+	height: 4.375rem;
+	background-color: #fff;
+	box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15) !important;
+}

@@ -1,0 +1,167 @@
+
+/*Tomado de vehiculo.css*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body,.auxLogin,.fondo{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	background-color: #f4f4f4;
+}
+.lateralIzquierdo{
+	width: 50%;
+	background-color: #fff;/*color blanco*/
+	height: 100%;
+	float: left;
+	
+}
+.lateralDerecho{
+	width: 50%;
+	background-color: #009dff;/*color personalizado */
+	height: 100%;
+	float: left;
+	display: flex;/*nos permite convertir a las etiquetas hijos como flexibles*/
+	justify-content: center;/*centramos horizontal*/
+	align-items: center;/*centrar vertical*/
+	flex-direction: column;/*alinear en columna los elementos, traduccion enviarlos hacia abajo */
+}
+
+.textoPrincipal{
+	color: #fff;
+	font-family: "segoe ui light";
+	font-size: 35px;
+	text-align: center;
+}
+
+.camposIngreso,.campFormVehiculo{
+	display: block;/*permite colocar en bloque nuestra etiqueta, traduccion ocupa todo el espacio*/
+	margin: 40px auto;/*40 de espacio arriba y abajo, auto centra horizontal*/
+	width: 40%;/*es para que del 100% ocupe un 40%*/
+	font-size: 25px;/**/
+	border: none;/*elimina los bordes*/
+	border-radius: 10px;/*redondea las 4 esquinas*/
+	text-align: center;/*centra el texto*/
+	padding: 5px;/*le brinda un espaciado*/
+	color: #0075bf;/*color de fuente, es identico al fondo*/
+	outline: none;/*elimina contorno de linea*/
+	background-color: #fff;/*color blanco de fondo*/
+
+}
+.campFormVehiculo{
+	margin: 5px auto;/*40 de espacio arriba y abajo, auto centra horizontal*/
+	width: 100%;
+}
+
+.btnIniciar{
+	padding: 10px;/*agregmos espaciado*/
+	margin: 0 auto;/*centramos el boton*/
+	display: block;/*permite colocar en bloque nuestra etiqueta*/
+	background-color: initial;/*reiniciamos el color de fondo*/
+	border: none;/*eliminamos bordes*/
+	color: #fff;/*color blanco para cambiar el contorno de nuestro icono*/
+}
+
+.encabezado{
+	width: 100%;
+	display: grid;/*estableciendo modo tabla o rejilla*/
+	grid-template-columns: 15% 70% 7% 7%;/*Estableciendo el ancho y cantidad de columnas*/
+	justify-content: center;/*centrar horizontalmente*/
+	align-items: center;/*centrar verticalmente*/
+	padding: 25px 0;/*arriba y abajo 25px, el 0 nada en izquierda y derecha*/
+	border-bottom: solid #0075bf 2px;
+}
+.contenedorI{
+	width: 80%;
+	display: grid;/*estableciendo modo tabla o rejilla*/
+	grid-template-columns: 24% 24% 24% 24%;/*Estableciendo el ancho y cantidad de columnas*/
+	grid-gap: 1%;
+	background-color: #fff; 
+	margin: 25px auto;
+	box-shadow: 0px 0px 3px #000;
+}
+
+.btns{
+	width: 30%;
+	color: #0075bf;/*color del intecap*/
+	margin: 0 auto;
+}
+
+.centerI{
+	margin: 0 auto;
+	display: block;
+}
+.imgCarI{
+	width: 10%;
+}
+.textoPrincipal,.textAuxiliar{
+	color: #0075bf;
+	font-size: 35px;
+	font-family: "segoe ui light";
+	text-align: center;
+
+}
+.icoPrincipal{
+	width: 60%;
+}
+.auxHerramientas{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.icosAccion{
+	width: 40px;
+	color: #0075bf;
+}
+.textAuxiliar{
+	font-size: 22px;
+	margin: 20px 10px;
+	text-align: left;
+}
+/*FIN 2*/
+
+/*Tomado de cintas.css*/
+.imagenCinta{
+    width:120px;
+	height: 120px;
+    float:left;
+	object-fit: cover;
+}
+
+.fotoGrande{
+    display: none;
+    width: 50%;
+    margin:0 auto;
+}
+/*FIN 3*/
+
+/*Para flechas */
+.flechas{
+    width: 45px;
+    color: #071ffa;
+  }
+
+/*Para cajas de texto*/
+.box{
+	width:150px;
+	margin:10px 50px;
+	padding:5px;
+	border:#07c9fa 4px solid;
+	text-align: center;
+	background-color:rgb(255, 255, 255);
+	font-size:italic;
+	color:#07c9fa;
+}
+
+.obtenidos{
+	width:100px;
+	margin:5px 10px;
+	padding:5px;
+	font-size:italic;
+	color:#07c9fa;
+}

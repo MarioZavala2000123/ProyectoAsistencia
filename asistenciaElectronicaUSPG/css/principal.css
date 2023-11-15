@@ -1,0 +1,91 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	
+	display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auxForm{
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+.latIzquierdo{
+	width: 60%;
+	height: 100%;
+	float: left;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #0075bf;
+}
+.latDerecho{
+	width: 40%;
+	height: 100%;
+	float: left;
+	background-color: #ac162c;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+.logoIco{
+	width: 40%;
+}
+.icomuni{
+	position: absolute;
+	top: 30px;
+	left: 20px;
+	width: 150px;
+}
+#formPrincipal{
+	width: 100%;
+}
+.textPrincipal{
+	text-align: center;
+font-size: 40px;
+color: #fff;
+font-family: "segoe ui light";
+}
+.inPrincipal{
+	display: block;
+	margin: 40px auto;
+	width: 40%;
+	font-size: 25px;
+	border: none;
+	border-radius: 10px;
+	text-align: center;
+	padding: 5px;
+	color: #0075bf;
+	outline: none;
+	background-color: #fff;
+}
+.btnSubmit{
+	background-color: initial;
+	
+	
+	padding: 10px;
+	margin: 0 auto;
+	display: block;
+	background-color: initial;
+	border: none;
+	color: #fff;
+}
+.btnSubmit:hover{
+	cursor: pointer;
+}
+.inPrincipal:focus {
+	border: none;
+}
