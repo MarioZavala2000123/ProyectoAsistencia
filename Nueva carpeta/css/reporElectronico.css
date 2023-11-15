@@ -28,7 +28,8 @@
 }
 	
 .contenedor{
-	color: #10069F;  
+	color: #ac162c;  
+	background-color: #ac162c;
 	font-family: 'segoe ui light'; 
 	padding: 20px;
 	margin-bottom: 20px;
@@ -36,7 +37,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-bottom: #0075bf solid 2px;
+	border-bottom: #ac162c solid 2px;
 	box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15) !important;
 }
 
