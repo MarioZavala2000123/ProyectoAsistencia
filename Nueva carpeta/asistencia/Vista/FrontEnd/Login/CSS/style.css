@@ -1,0 +1,85 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2c6ed5;
+}
+
+.Registro {
+    width: 400px;
+    background: white;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: black;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.Registro h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+
+}
+
+.Registro p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.Registro a {
+    color: black;
+    text-decoration: none;
+}
+
+.Registro a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.Control {
+    width: 100%;
+    background: #fbc2eb;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'Calibri';
+    font-size: 18px;
+    color: black;
+}
+
+.Registro .Boton {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0px;
+    font-size: 16px;
+    
+}
+
+.Registro .Boton:hover {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: black;
+    margin: 16px 0px;
+    font-size: 16px;
+    text-decoration: underline;
+    
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+    display: block;
+
+}

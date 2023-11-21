@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body,.auxLogin{
+	width: 100%;
+	height: 100%;
+}
+.auxLogin{
+	display: grid;
+	grid-template-columns: 30% 70%;
+}
+
+.Logo{
+	width: 70%;
+}
+.lateralIzquierdo{
+	background-color: #ac162c;/*color de USPG*/
+	display: flex;/*nos permite convertir a las etiquetas hijos como flexibles*/
+	justify-content: center;/*centramos horizontal*/
+	align-items: center;/*centrar vertical*/
+}
+.iconUser{
+	width: 150px;
+	color: #fff;
+}
+.lateralDerecho{
+	background: #ac162c;
+	display: flex;/*nos permite convertir a las etiquetas hijos como flexibles*/
+	justify-content: center;/*centramos horizontal*/
+	align-items: center;/*centrar vertical*/
+	flex-direction: column;/*alinear en columna los elementos, traduccion enviarlos hacia abajo */
+}
+
+.textoPrincipal{
+	color: #fff;
+	font-family: "segoe ui light";
+	font-size: 35px;
+	text-align: center;
+}
+.centrar{
+	margin: 0 auto;
+	display: block;
+}
+.auxCampos{
+	display: grid;
+	grid-template-columns: 30% 40% 30%;
+}
+.auxDetampos{
+	display: grid;
+}
+.camposIngreso{
+	font-family: "segoe ui";
+	display: block;/*permite colocar en bloque nuestra etiqueta, traduccion ocupa todo el espacio*/
+	margin: 20px auto;/*40 de espacio arriba y abajo, auto centra horizontal*/
+	width: 100%;/*es para que del 100% ocupe un 40%*/
+	font-size: 25px;/**/
+	border: none;/*elimina los bordes*/
+	border-radius: 20px;/*redondea las 4 esquinas*/
+	text-align: center;/*centra el texto*/
+	padding: 10px 0;/*le brinda un espaciado*/
+	color: #0075bf;/*color de fuente, es identico al fondo*/
+	outline: none;/*elimina contorno de linea*/
+	background-color: #fff;/*color blanco de fondo*/
+
+}
+
+.btnIniciar{
+	padding: 10px;/*agregmos espaciado*/
+	margin: 0 auto;/*centramos el boton*/
+	display: block;/*permite colocar en bloque nuestra etiqueta*/
+	background-color: initial;/*reiniciamos el color de fondo*/
+	border: none;/*eliminamos bordes*/
+	color: #fff;/*color blanco para cambiar el contorno de nuestro icono*/
+}
+
+.encabezado{
+	width: 100%;
+	display: grid;/*estableciendo modo tabla o rejilla*/
+	grid-template-columns: 10% 80% 10%;/*Estableciendo el ancho y cantidad de columnas*/
+	justify-content: center;/*centrar horizontalmente*/
+	align-items: center;/*centrar verticalmente*/
+	padding: 25px 0;/*arriba y abajo 25px, el 0 nada en izquierda y derecha*/
+	border-bottom: solid #0075bf 2px;
+}
+.btnMenu{
+	width: 20%;
+	color: #ac162c;/*color del USPG*/
+	margin: 0 auto;
+}
+.textoPrincipal,.textAuxiliar{
+	color: #fff;
+	font-size: 35px;
+	font-family: "segoe ui";
+	font-weight: initial;
+	text-align: center;
+
+}
+.icoPrincipal{
+	width: 70%;
+}
+.auxHerramientas{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.icosAccion{
+	width: 40px;
+	color: #0075bf;
+}
+.textAuxiliar{
+	font-size: 22px;
+	margin: 20px 10px;
+}
+
+.formatoMenu{
+	display: none;
+	background-color: #0075bf;
+	width: 70px;
+	position: absolute;/*remover el orden convencional de HTML, las toma 
+	a partir del position relative mas cercano*/
+	top: 0;
+	left: 0;
+	animation: mostraMenu .4s;
+}
+
+@keyframes mostraMenu{
+	from{width: 0;}/*donde debe iniciar la animación*/
+	to{width: 70px;}/*finalización de la animación*/
+}
+.icosMenu{
+	color: #fff;
+	width: 70%;/*cambiando ancho */
+	display: block;/*cambiar visualizacion a bloque*/
+	margin: 0 auto;/*centrar icono*/
+	padding: 15px 0;/*arriba y abajo, el 0 es izuierda y derecha*/
+}
+
+

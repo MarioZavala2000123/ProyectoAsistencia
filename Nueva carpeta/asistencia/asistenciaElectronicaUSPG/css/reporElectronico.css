@@ -1,0 +1,122 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+	a{
+	  text-decoration: none;
+	  color: #fff;
+	}
+	.textosGuia{
+	  font-size: 20px;
+	  font-family: "segoe ui light";
+	}
+
+   .btn{
+    font-family: "segoe ui light";
+    color: #0075bf;
+    display: inline-block;
+    border-radius: 40px;
+    width: 30px;
+    }
+    
+    
+.menu{
+	width: 40px;
+	color: #fff;
+	cursor: pointer;
+}
+	
+.contenedor{
+	color: #ffffff;  
+	background-color: #ac162c;
+	font-family: 'segoe ui light'; 
+	padding: 20px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: #ac162c solid 2px;
+	box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15) !important;
+}
+
+.text{
+	font-size: 40px;
+	text-align: center;
+}
+.iconoPrincipal{
+	width: 30%;
+}
+.areaDe,.areaIz{
+	width: 25%;
+	float: left;
+}
+.areaCe{
+	width: 50%;
+}
+
+.areaDe{
+	text-align: right;
+	float: left;
+}
+
+.auxContenedor{
+	position: relative;
+	margin: 20px auto; 
+	width: 100%; 
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.campoFecha{
+	font-size: 25px;
+	font-family: "segoe ui light";
+} 
+
+.mainPrincipal{
+	display: none;
+	background-color: #0075bf;
+	width: 70px;
+	position: absolute;
+	top: -20px;
+	left: 0;
+	animation:animatezoom 0.3s;
+}
+
+.botonesMenu{
+	width: 50%;
+	margin: 0 auto;
+	color: #fff;
+	padding: 20px 0;
+	cursor: pointer;
+}
+
+.botonesMenu:hover,.menu:hover,.btn:hover{
+    	color: #10069F;
+    }
+@keyframes animatezoom{
+	from{width: 0;} 
+	to{width: 70px;}
+}
+
+@media only screen and (max-width: 600px) {
+
+.text{
+	font-size: 1em;
+} 
+
+.iconoPrincipal{
+	width: 50%;
+}
+.auxContenedor{
+	flex-direction: column;
+}
+.auxMovil{
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+}
